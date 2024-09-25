@@ -1,0 +1,113 @@
+.page-header {
+  background-color: #D8232A; /* Red background */
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+  position: sticky; 
+  top: 0; 
+  z-index: 10; 
+}
+
+.logo {
+  color: #FFFFFF; /* White logo text */
+  align-self: center;
+  margin-left: 1rem; 
+  font-size: 2rem; 
+  font-weight: 800;
+}
+
+.logo a {
+  color: #FFFFFF; /* White link color */
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  margin-right: 1.875rem; 
+}
+
+.nav-bar a {
+  color: #FFFFFF; /* White link color */
+  padding: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: font-size  0.3s; 
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.menu-icon {
+  color: #FFFFFF; /* White menu icon */
+  cursor: pointer;
+  display: none;
+}
+
+.login-btn {
+  font-size: 0.9rem;
+  border: 1px solid #D8232A; /* Red border */
+  border-radius: 5px;
+  padding: 0.65rem;
+  background-color: #FFFFFF; /* White background */
+  color: #D8232A; /* Red text */
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.login-btn:hover {
+  background-color: #D8232A; /* Red background on hover */
+  color: #FFFFFF; /* White text on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: #D8232A; /* Red background for mobile */
+    text-align: center;
+    z-index: 10;
+  }
+
+  .nav-bar.responsive {
+    display: block;
+  }
+
+  .nav-bar a {
+    display: block;
+    font-size: 18px;
+    padding: 15px 12px;
+    color: #FFFFFF; /* White link color */
+  }
+
+  /* .nav-bar a:hover {
+    color: #; 
+  } */
+
+  .menu-icon {
+    display: block;
+    z-index: 10;
+    margin-left: 25px;
+    color: #FFFFFF; /* White menu icon */
+  }
+
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #D8232A; /* Red border */
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+}

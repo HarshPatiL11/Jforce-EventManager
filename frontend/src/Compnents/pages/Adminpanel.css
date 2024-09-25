@@ -1,0 +1,137 @@
+.admin-panel {
+    height: 85vh;
+    display: flex;
+    padding: 20px;
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+.add-event-btn-div {
+  display: flex;
+  justify-content: center;
+}
+.add-event-btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-event-btn:hover {
+  background-color: #cc0000;
+}
+
+.event-table-container {
+  overflow-x: auto;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.event-table-head {
+  background-color: #f5f5f5;
+}
+
+.event-table-head th {
+  padding: 10px;
+  text-align: left;
+  color: #ff0000;
+}
+
+.event-table-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.view-users-btn {
+  background-color: #b71c1c;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-users-btn:hover {
+  background-color: #a71c1c;
+}
+
+.registered-users-section {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+.registered-users-section h3 {
+  color: red;
+  margin: 5px 0px 9px 8px;
+}
+.registered-users-table-container {
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+.registered-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.registered-users-table-head {
+  background-color: #f5f5f5;
+}
+
+.registered-users-table-head th {
+  padding: 10px;
+  text-align: left;
+  color: #ff0000;
+}
+
+.registered-users-table-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.cls-btn-div{
+      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-users-btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-users-btn:hover {
+  background-color: #cc0000;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,123 @@
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.home-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+}
+
+.home-title {
+  text-align: center;
+  color: #ff0000; /* Red */
+  margin-bottom: 20px;
+}
+
+.event-table-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.event-table th {
+  background-color: #f5f5f5;
+  color: #ff0000; /* Red */
+}
+
+.event-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.event-book-btn {
+  background-color: #ff0000; /* Red */
+  color: #ffffff; /* White */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-book-btn:hover {
+  background-color: #cc0000; /* Darker shade of red on hover */
+}
+
+.logout-link {
+  display: block;
+  text-align: center;
+  color: #ff0000; /* Red */
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.logout-link a{
+      color: #ff0000;
+    font-size: 20px;
+    text-decoration: none;
+}
+.logout-link:hover {
+  text-decoration: underline;
+}
+/* Media Queries */
+@media (max-width: 850px) {
+  .home-content {
+    padding: 15px;
+  }
+
+  .event-table th,
+  .event-table td {
+    padding: 10px;
+  }
+
+  .home-title {
+    font-size: 1.5em; /* Adjust the font size */
+  }
+
+  .event-book-btn {
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 600px) {
+  .home-content {
+    width: 90%; /* Full width on smaller screens */
+  }
+
+  .home-title {
+    font-size: 1.25em; /* Further adjust the font size */
+  }
+
+  .event-table {
+    font-size: 0.9em; /* Smaller table font size */
+  }
+
+  .event-book-btn {
+    width: 100%; /* Full width for buttons */
+    padding: 12px; /* Adjust padding for touch targets */
+  }
+
+  .logout-link {
+    font-size: 12px; /* Adjust logout link size */
+  }
+}

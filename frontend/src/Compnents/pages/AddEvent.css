@@ -1,0 +1,83 @@
+.event-form-container {
+  height: 85vh; /* Full height for centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background for the container */
+}
+
+.event-form {
+  width: 400px; /* Match the width of LoginBody */
+  padding: 20px;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 5px; /* Match the border radius of LoginBody */
+  background-color: #fff; /* Light red background for the form */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.event-form h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #b71c1c; /* Dark red color for the heading */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #b71c1c; /* Dark red border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.event-form-btn  {
+  width: 100%;
+  padding: 10px;
+  background-color: #b71c1c; /* Dark red button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.event-form-btn:disabled {
+  background-color: #ccc; /* Grey for disabled button */
+  cursor: not-allowed;
+}
+
+.event-form-btn:hover:not(:disabled) {
+  background-color: #fff; 
+  border: #b71c1c 1px solid;
+  color: #b71c1c;
+  /* box-shadow: 3px 3px 3px  #b71c1c; */
+}
+
+.error-message {
+  color: #b71c1c; /* Dark red for error messages */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.loading-message {
+  color: orange;
+  margin: 10px 0;
+}
+
+.success-message {
+  color: #4caf50; /* Keep success messages green */
+  font-size: 14px;
+}
